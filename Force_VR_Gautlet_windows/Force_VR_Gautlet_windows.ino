@@ -1,6 +1,6 @@
 #include <Wire.h>
-#include <Adafruit_MotorShield.h>
-#include "utility/Adafruit_PWMServoDriver.h"
+#include <AFMotor.h>
+
 
 Adafruit_MotorShield AFMSbot(0x61); // Rightmost jumper closed
 
@@ -38,12 +38,7 @@ void loop() {
     
     
     //Start motor movement -- 
-     //myMotor1->run(FORWARD);
-
-     for(i=0; i<355; i++)
-     {
-      myMotor1->run(FORWARD);
-     }
+     myMotor1->run(FORWARD);
     
     /*
      for (i=0; i<255; i++) {
@@ -67,7 +62,7 @@ void loop() {
   } else {
     myMotor1->run(RELEASE);
     val = 0;
-    //Serial.println("Nope");
+    Serial.println("Nope");
     //Serial.println(val);
   }
   
