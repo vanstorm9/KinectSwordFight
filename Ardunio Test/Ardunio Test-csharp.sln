@@ -3,6 +3,8 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 
 Project("{071A7049-A5A3-C1F2-4928-837256A4F8FF}") = "Ardunio Test", "Assembly-CSharp-vs.csproj", "{895A5A44-4ECE-51A0-11A9-6A51F7691191}"
 EndProject
+Project("{071A7049-A5A3-C1F2-4928-837256A4F8FF}") = "Ardunio Test", "Assembly-CSharp-Editor-vs.csproj", "{452298F8-9F1A-FAC8-30A7-159A4275CFB0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -13,11 +15,15 @@ Global
 		{895A5A44-4ECE-51A0-11A9-6A51F7691191}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{895A5A44-4ECE-51A0-11A9-6A51F7691191}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{895A5A44-4ECE-51A0-11A9-6A51F7691191}.Release|Any CPU.Build.0 = Release|Any CPU
+		{452298F8-9F1A-FAC8-30A7-159A4275CFB0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{452298F8-9F1A-FAC8-30A7-159A4275CFB0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{452298F8-9F1A-FAC8-30A7-159A4275CFB0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{452298F8-9F1A-FAC8-30A7-159A4275CFB0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
-									GlobalSection(MonoDevelopProperties) = preSolution
+																																														GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = Assembly-CSharp.csproj
 		Policies = $0
 		$0.TextStylePolicy = $1

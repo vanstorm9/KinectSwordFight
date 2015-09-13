@@ -38,13 +38,14 @@ void loop() {
     
     
     //Start motor movement -- 
-     //myMotor1->run(FORWARD);
-
+     myMotor1->run(FORWARD);
+     delay(30);
+  /*
      for(i=0; i<355; i++)
      {
       myMotor1->run(FORWARD);
      }
-    
+    */
     /*
      for (i=0; i<255; i++) {
       myMotor1->setSpeed(i);  

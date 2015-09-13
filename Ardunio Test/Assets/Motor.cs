@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.IO.Ports;
 
@@ -8,24 +8,30 @@ public class Motor : MonoBehaviour {
 	private bool lightState = false;
 	//public GameObject light = null;
 	public AudioClip clip;
-
+	
 	int wheel_time = 0;
-
+	
 	
 	void Start()
 	{
 		serial.Open ();
 		//serial.Write ("Testing");
+
+		OpenCheck ();
+	}
+	
+	void OpenCheck()
+	{
 		if (serial.IsOpen == false) {
 			//serial.Write ("Force Open");
 			Debug.Log ("Force Open");
-			//	serial.Open ();
+			serial.Open ();
 		} else {
 			//serial.Write ("Port already opened");
 			Debug.Log ("Port already opened");
 		}
 	}
-
+	
 	/*
 	void Update()
 	{
@@ -35,9 +41,44 @@ public class Motor : MonoBehaviour {
 		}
 	}
 	*/
+
+	/*
+	void OnCollisionEnter(Collision col)
+	{
+		if(col.gameObject.name == "Cube_Col")
+		{
+			Destroy (col.gameObject);
+		}
+	}
+	 * */
+
+	void OnCollisionEnter(Collision collision) 
+	{
+		Debug.Log ("Collision Detected");
+
+		Debug.Log (collision.gameObject.name);
+
+
+
+		FingerModel finger = collision.gameObject.GetComponentInParent<FingerModel>();
+		/*
+		if(finger){
+			Debug.Log ("Finger " + finger.fingerType);
+
+		}
+		*/
+
+		OpenCheck ();
+		Debug.Log ("Serial sent to Arduino");
+		serial.Write ("A");
+
+
+
+	}
 	
 	public void OnMouseDown(){
 		Debug.Log ("Mouse pressed Down");
+		OpenCheck ();
 		/*
 		while (true) 
 		{
@@ -52,9 +93,9 @@ public class Motor : MonoBehaviour {
 			Debug.Log (wheel_time);
 		}
 		*/
-
-
+		
+		
 		serial.Write ("A");
-
+		
 	}
 }
