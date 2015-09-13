@@ -16,10 +16,7 @@ public class Motor : MonoBehaviour {
 	{
 		serial.Open ();
 		//serial.Write ("Testing");
-<<<<<<< HEAD
-
-=======
->>>>>>> eb4bf46ec81805d7679099ccfa7b4c88b46e2163
+		
 		OpenCheck ();
 	}
 	
@@ -44,63 +41,22 @@ public class Motor : MonoBehaviour {
 		}
 	}
 	*/
-<<<<<<< HEAD
-
-	/*
-	void OnCollisionEnter(Collision col)
-	{
-		if(col.gameObject.name == "Cube_Col")
-		{
-			Destroy (col.gameObject);
-		}
-	}
-	 * */
-
 	void OnCollisionEnter(Collision collision) 
 	{
-		Debug.Log ("Collision Detected");
-
-		Debug.Log (collision.gameObject.name);
-
-
-
-=======
-	void OnCollisionEnter(Collision collision) 
-	{
->>>>>>> eb4bf46ec81805d7679099ccfa7b4c88b46e2163
 		FingerModel finger = collision.gameObject.GetComponentInParent<FingerModel>();
 		/*
 		if(finger){
 			Debug.Log ("Finger " + finger.fingerType);
-
 		}
 		*/
-<<<<<<< HEAD
-
+		
+		
 		OpenCheck ();
 		Debug.Log ("Serial sent to Arduino");
 		serial.Write ("A");
-
-
-
-=======
-		Debug.Log ("Serial sent to Arduino");
-		serial.Write ("A");
-		/*
-		Debug.Log ("Commence sleep");
-		int i = 0;
-		while (true) 
-		{
-			if(i > 9000)
-			{
-				break;
-			}
-			i++;
-		}
-
-		Debug.Log ("End sleep");
-		*/
->>>>>>> eb4bf46ec81805d7679099ccfa7b4c88b46e2163
+		
+		
+		
 	}
 	
 	public void OnMouseDown(){
@@ -109,7 +65,6 @@ public class Motor : MonoBehaviour {
 		/*
 		while (true) 
 		{
-
 			if(wheel_time < 30)
 			{
 				Debug.Log ("Escaped");
