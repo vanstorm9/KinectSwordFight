@@ -131,7 +131,6 @@
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Utils\ExponentialSmoothing.cs" />
      <Compile Include="Assets\LeapMotion\Widgets\Scripts\Utils\FrameRateControls.cs" />
      <Compile Include="Assets\MasterSerial.cs" />
-     <Compile Include="Assets\Motor.cs" />
      <Compile Include="Assets\NetworkManager.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCameraRig.cs" />
      <Compile Include="Assets\OVR\Scripts\OVRCommon.cs" />

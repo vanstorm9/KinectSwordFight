@@ -1,13 +1,12 @@
 ﻿<Properties>
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\SwordCollision.cs">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\MasterSerial.cs">
     <Files>
-      <File FileName="c:\Users\AnthonyLowhur\Documents\Git-Projects\VRMMORPG\Ardunio Test\Assets\LeapMotion+OVR\SystemWipe\QuickSwitcher.cs" Line="141" Column="57" />
+      <File FileName="c:\Users\AnthonyLowhur\Documents\Git-Projects\VRMMORPG\Ardunio Test\Assets\LeapMotion+OVR\SystemWipe\QuickSwitcher.cs" Line="127" Column="44" />
       <File FileName="Assets\LeapMotion\Scripts\HandController.cs" Line="188" Column="27" />
       <File FileName="Assets\led.cs" Line="1" Column="1" />
-      <File FileName="Assets\Motor.cs" Line="1" Column="1" />
-      <File FileName="Assets\ShieldCollision.cs" Line="10" Column="1" />
-      <File FileName="Assets\SwordCollision.cs" Line="12" Column="49" />
+      <File FileName="Assets\ShieldCollision.cs" Line="1" Column="1" />
+      <File FileName="Assets\SwordCollision.cs" Line="1" Column="1" />
       <File FileName="Assets\MasterSerial.cs" Line="35" Column="4" />
     </Files>
   </MonoDevelop.Ide.Workbench>
