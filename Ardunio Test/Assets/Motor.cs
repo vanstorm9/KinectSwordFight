@@ -43,13 +43,28 @@ public class Motor : MonoBehaviour {
 	void OnCollisionEnter(Collision collision) 
 	{
 		FingerModel finger = collision.gameObject.GetComponentInParent<FingerModel>();
-		
+		/*
 		if(finger){
 			Debug.Log ("Finger " + finger.fingerType);
 
 		}
+		*/
 		Debug.Log ("Serial sent to Arduino");
 		serial.Write ("A");
+		/*
+		Debug.Log ("Commence sleep");
+		int i = 0;
+		while (true) 
+		{
+			if(i > 9000)
+			{
+				break;
+			}
+			i++;
+		}
+
+		Debug.Log ("End sleep");
+		*/
 	}
 	
 	public void OnMouseDown(){
