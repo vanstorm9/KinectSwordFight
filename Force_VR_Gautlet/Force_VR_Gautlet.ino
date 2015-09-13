@@ -39,7 +39,11 @@ void loop() {
     
     //Start motor movement -- 
      myMotor1->run(FORWARD);
+<<<<<<< HEAD
      delay(30);
+=======
+     delay(100);
+>>>>>>> eb4bf46ec81805d7679099ccfa7b4c88b46e2163
   /*
      for(i=0; i<355; i++)
      {
