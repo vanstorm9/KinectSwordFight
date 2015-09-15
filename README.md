@@ -1,5 +1,4 @@
-# VRMMORPG
-Our MMORPG and attempts to recreate Sword Art Online. 
+# KinectSwordFight
+Allow the user to control their in-game 3D model in a Unity sword fighting game
 
-Stuff to download:
-Oculus Rift SDK, Leap Motion SDK, Ardunio IDE, Arduino Motorshield Library, Kinect SDK
+
